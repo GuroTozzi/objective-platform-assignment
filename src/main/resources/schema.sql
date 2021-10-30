@@ -1,0 +1,19 @@
+CREATE TABLE BEER (
+id INT NOT NULL AUTO_INCREMENT,
+name VARCHAR(50) NOT NULL,
+tagline VARCHAR(450) NOT NULL,
+first_brewed VARCHAR(450) NOT NULL,
+description VARCHAR(800) NOT NULL,
+image_url VARCHAR(400) NOT NULL,
+abv INT,
+ibu INT,
+target_fg INT NOT NULL,
+target_og INT NOT NULL,
+ebc INT,
+srm INT,
+ph INT,
+attenuation_level INT NOT NULL,
+brewers_tips VARCHAR(450) NOT NULL,
+FAV BOOLEAN NOT NULL,
+PRIMARY KEY (id)
+);
