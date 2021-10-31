@@ -15,10 +15,6 @@ public class Beer {
     private String first_brewed;
     private String description;
     private String image_url;
-//    private String volume_unit;
-//    private Float volume_quantity;
-//    private String boil_volume_unit;
-//    private Float boil_volume_quantity;
     private Float abv;
     private Float ibu;
     private Float target_fg;
@@ -29,17 +25,13 @@ public class Beer {
     private Float attenuation_level;
     private String brewers_tips;
     private Boolean fav;
-//    @OneToMany
-//    private List<FoodPairing> foodPairingList;
 
     public Beer(String name, String description) {
         this.name = name;
         this.description = description;
     }
 
-    public Beer() {
-
-    }
+    public Beer() {}
 
     public long getId() {
         return id;
@@ -88,38 +80,6 @@ public class Beer {
     public void setImage_url(String image_url) {
         this.image_url = image_url;
     }
-
-//    public String getVolume_unit() {
-//        return volume_unit;
-//    }
-//
-//    public void setVolume_unit(String volume_unit) {
-//        this.volume_unit = volume_unit;
-//    }
-//
-//    public Float getVolume_quantity() {
-//        return volume_quantity;
-//    }
-//
-//    public void setVolume_quantity(Float volume_quantity) {
-//        this.volume_quantity = volume_quantity;
-//    }
-//
-//    public String getBoil_volume_unit() {
-//        return boil_volume_unit;
-//    }
-//
-//    public void setBoil_volume_unit(String boil_volume_unit) {
-//        this.boil_volume_unit = boil_volume_unit;
-//    }
-//
-//    public Float getBoil_volume_quantity() {
-//        return boil_volume_quantity;
-//    }
-//
-//    public void setBoil_volume_quantity(Float boil_volume_quantity) {
-//        this.boil_volume_quantity = boil_volume_quantity;
-//    }
 
     public Float getAbv() {
         return abv;
@@ -201,11 +161,4 @@ public class Beer {
         this.fav = fav;
     }
 
-    //    public List<FoodPairing> getFoodPairingList() {
-//        return foodPairingList;
-//    }
-//
-//    public void setFoodPairingList(List<FoodPairing> foodPairingList) {
-//        this.foodPairingList = foodPairingList;
-//    }
 }
